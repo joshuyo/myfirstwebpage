@@ -3,8 +3,7 @@
     <head>
       <title>WS05</title>
     <link rel="stylesheet" href="styles.css">
-   
-    </head>
+    </head><meta name="viewport" content="width=device-width, initial-scale=1">
     <body>
        <header>
   <h1>My Website</h1>
@@ -23,8 +22,8 @@
 <div class="media-query-box">Resize the window to see the effect</div>
 
 <nav class="responsive-nav">
-      <button class="menu-toggle">☰ Menu</button>
-      <ul class="nav-list">
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="nav-list">☰ Menu</button>
+        <ul class="nav-list" id="nav-list">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
