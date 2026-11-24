@@ -147,7 +147,7 @@ h3 {
 .level8 { width: 65%; }
 .level9 { width: 60%; }
 
-/* Homepage cards */
+/* Koti cards */
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -166,7 +166,7 @@ h3 {
     background-color: #372829;
 }
 
-/* Content sections */
+/* Sisältö/Content sections */
 .content-box {
     background-color: #292122;
     padding: 25px;
@@ -184,7 +184,7 @@ h3 {
     font-size: 30px;
 }
 
-/* Nine circles page */
+/* Yhdeksän circles page */
 .circle-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -271,5 +271,20 @@ footer {
     .diagram,
     .content-box {
         padding: 20px;
+    }
+}
+/* Characters page */
+.character-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Link inside the Dante and Virgil homepage card */
+.card h3 a {
+    color: inherit;
+}
+
+@media (max-width: 760px) {
+    .character-grid {
+        grid-template-columns: 1fr;
     }
 }
