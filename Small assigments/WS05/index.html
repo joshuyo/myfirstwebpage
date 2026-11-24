@@ -3,7 +3,8 @@
     <head>
       <title>WS05</title>
     <link rel="stylesheet" href="styles.css">
-    </head><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
     <body>
        <header>
   <h1>My Website</h1>
@@ -33,10 +34,17 @@
 </main>
 
 <footer>
-  <p>Copyright 2025</p>
+  <p>Copyright 2026</p>
 </footer>
 
+<script>
+  const menuButton = document.querySelector(".menu-toggle");
 
+  menuButton.addEventListener("click", () => {
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", String(!isOpen));
+  });
+</script>
 
     </body>
     </html>
